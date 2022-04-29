@@ -1,5 +1,9 @@
 package ar.edu.unju.edm.model;
 
+
+import org.springframework.stereotype.Component;
+
+@Component
 public class NotaAlumno {
 	
 	private int numero1;

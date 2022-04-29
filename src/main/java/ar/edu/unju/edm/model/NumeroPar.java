@@ -1,17 +1,15 @@
 package ar.edu.unju.edm.model;
 
-
 import org.springframework.stereotype.Component;
 
 @Component
-public class Mes {
+public class NumeroPar {
 	
 	private int numero1;
 	
+	public NumeroPar() {}
 	
-	public Mes() {}
-	
-	public Mes(int numero1) {
+	public NumeroPar(int numero1) {
 		
 		this.numero1=numero1;
 	}
@@ -24,15 +22,17 @@ public class Mes {
 		this.numero1 = numero1;
 	}
 	
-	public String CalculoMes() {
+	public String numeroPar() {
 		
-		if(this.numero1>0 && this.numero1<=12) {
-			return "si es un mes del año";
+		if(this.numero1%2==0) {
+			
+			return "Es par";
 		}
 		else {
-			return "no pertenece a un mes del año";
+			return "No es par";
 		}
+		
+		
 	}
-	
 
 }
